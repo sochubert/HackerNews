@@ -17,6 +17,8 @@
 		53C71BB426F309E600E286B4 /* H4XOR_NewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C71BB326F309E600E286B4 /* H4XOR_NewsUITests.swift */; };
 		53C71BC326F30DF700E286B4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C71BC226F30DF700E286B4 /* NetworkManager.swift */; };
 		53C71BC526F30F6200E286B4 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C71BC426F30F6100E286B4 /* PostData.swift */; };
+		53C71BC826F3169300E286B4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C71BC726F3169300E286B4 /* DetailView.swift */; };
+		53C71BCA26F3190D00E286B4 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C71BC926F3190D00E286B4 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		53C71BB526F309E600E286B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53C71BC226F30DF700E286B4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		53C71BC426F30F6100E286B4 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		53C71BC726F3169300E286B4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		53C71BC926F3190D00E286B4 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +109,7 @@
 			children = (
 				53C71B9126F309E400E286B4 /* AppDelegate.swift */,
 				53C71B9326F309E400E286B4 /* SceneDelegate.swift */,
-				53C71B9526F309E400E286B4 /* ContentView.swift */,
+				53C71BC626F3168100E286B4 /* Views */,
 				53C71B9726F309E500E286B4 /* Assets.xcassets */,
 				53C71BC126F30DE500E286B4 /* Models */,
 				53C71B9C26F309E500E286B4 /* LaunchScreen.storyboard */,
@@ -148,6 +152,16 @@
 				53C71BC426F30F6100E286B4 /* PostData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		53C71BC626F3168100E286B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53C71B9526F309E400E286B4 /* ContentView.swift */,
+				53C71BC726F3169300E286B4 /* DetailView.swift */,
+				53C71BC926F3190D00E286B4 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,10 +295,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				53C71BC526F30F6200E286B4 /* PostData.swift in Sources */,
+				53C71BC826F3169300E286B4 /* DetailView.swift in Sources */,
 				53C71BC326F30DF700E286B4 /* NetworkManager.swift in Sources */,
 				53C71B9226F309E400E286B4 /* AppDelegate.swift in Sources */,
 				53C71B9426F309E400E286B4 /* SceneDelegate.swift in Sources */,
 				53C71B9626F309E400E286B4 /* ContentView.swift in Sources */,
+				53C71BCA26F3190D00E286B4 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
