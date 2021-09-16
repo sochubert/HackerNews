@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var networkManager = NetworkManager()
+    
     var body: some View {
         NavigationView {
-            List(posts) { post in
-                Text(post.title)
+            List(networkManager.posts) { post in
+                HStack {
+                    Text(String(post.points))
+                    Text(post.title)
+                }
             }
             .navigationTitle("H4XOR NEWS")
         }
+        .onAppear(perform: {
+            self.networkManager.fetchData()
+        })
     }
 }
 
@@ -24,14 +33,8 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct Post: Identifiable {
-    // Identifiable은 id로 order를 고려하기 위해 사용
-    let id: String
-    let title: String
-}
-
-let posts = [
-    Post(id: "1", title: "Hello1"),
-    Post(id: "2", title: "Hello2"),
-    Post(id: "3", title: "Hello3"),
-]
+//let posts = [
+//    Post(id: "1", title: "Hello1"),
+//    Post(id: "2", title: "Hello2"),
+//    Post(id: "3", title: "Hello3"),
+//]
